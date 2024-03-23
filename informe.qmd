@@ -1,0 +1,223 @@
+---
+title: "" 
+lang: es
+format:
+  pdf:
+    include-in-header:
+     - text: |
+        \usepackage{draftwatermark}
+        \SetWatermarkText{Template}
+        \usepackage[utf8]{inputenc}
+        \usepackage{fancyhdr}
+        \usepackage{graphicx}
+        \usepackage{tikz}
+        \usetikzlibrary{arrows, arrows.meta}
+        \usepackage{pgfgantt}
+        \usepackage{color,colortbl}
+        \usepackage{float}
+        \usepackage{parskip}
+        \usepackage{geometry}
+        \usepackage{helvet}
+        \usepackage{amsmath}
+        \usepackage{amssymb}
+        \usepackage{gensymb}
+        \usepackage{caption}
+        \usepackage{multirow}
+        \captionsetup{justification=justified,format=plain,font=small,labelfont=bf,margin=50pt}
+        \captionsetup[table]{name=\textbf{Tabla},labelsep=period}
+        \captionsetup[figure]{name=\textbf{Figura},labelsep=period}
+        \pagestyle{fancy}
+        \geometry{top=1.5cm,bottom=1.5cm,left=2.5cm,right=2.5cm,voffset=-0.35cm,includefoot,headheight=14pt}
+        \renewcommand{\familydefault}{\sfdefault}
+        \newcommand{\sietepuntos}{\fontsize{7pt}{\baselineskip}\selectfont}
+        \newcommand{\cincopuntos}{\fontsize{6pt}{\baselineskip}\selectfont}
+        \newcommand{\ochopuntos}{\fontsize{8.8pt}{\baselineskip}\selectfont}
+        \newcommand{\nuevepuntos}{\fontsize{9.6pt}{\baselineskip}\selectfont}
+        \renewcommand\thefootnote{\textcolor{blue}{\arabic{footnote}}}
+        \definecolor{Gray}{rgb}{0.801,0.801,0.801}
+        \definecolor{Blues}{rgb}{0.0039,0.3686,0.6745}
+        \definecolor{Blanco}{rgb}{1.000,1.000,1.000}
+        \definecolor{Amarillo}{rgb}{1.000,1.000,0.000}
+        \definecolor{Naranja}{rgb}{1.000,0.50196,0.000}
+        \definecolor{Turquesa}{rgb}{0.000,0.80784,0.819607}
+        \definecolor{SoftYello}{rgb}{1.00,1.00,0.51}
+        \addtolength{\headheight}{4.5\baselineskip}
+        \setlength{\headheight}{70pt}
+        \setlength{\footskip}{35pt}
+        \setlength{\textheight}{638pt}
+        \fancyhead[CE,CO]{\vspace{-0.5cm} \includegraphics[height=1.5cm]{logoifop.png}\\ \sietepuntos \vspace{0.35cm} INSTITUTO DE FOMENTO PESQUERO / DIVISION INVESTIGACION PESQUERA}
+        \fancyhead[LO,LE]{ }
+        \fancyhead[RO,RE]{ }
+        \fancyheadoffset{0.01cm}
+        \fancyfootoffset{0.01cm}
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0pt}
+        \fancyfoot[CO,CE]{\cincopuntos  \thepage  \\ \vspace{-0.3cm} ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- \\ \vspace{-0.1cm} \sietepuntos CONVENIO DE DESEMPEÑO 2022 IFOP/SUBSECRETARÍA DE ECONOMíA Y EMT \\  \vspace{-0.11cm} SEGUNDO INFORME. SARDINA AUSTRAL,  REGIÓN DE AYSÉN DEL GENERAL CARLOS IBÁÑEZ DEL CAMPO, AÑO 2023}
+
+        \AtBeginDocument{\thispagestyle{empty}
+        \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=22.32cm,width=22.14cm,viewport=28 28 140 273]{portada1.pdf}};
+        \node[text width=8cm] at (14.65,16.60) {\large \textbf{SEGUNDO INFORME}};
+        \node[text width=8cm] at (14.47,16.13) {\ochopuntos Convenio de Desempeño 2022};
+        \node[text width=10cm] at (11.63,15.46) {\nuevepuntos Estatus y posibilidades de explotación biológicamente};
+        \node[text width=10cm] at (12.41,15.07) {\nuevepuntos sustentable de sardina austral, Región de Aysén};
+        \node[text width=12cm] at (13.40,14.63) {\nuevepuntos del General Carlos Ibáñez del Campo, año 2023};
+        \node[text width=10cm] at (11.33,14.05) {\footnotesize \textbf{SUBSECRETARÍA DE ECONOMÍA Y EMT / Agosto 2023}};
+        \end{tikzpicture}\clearpage}
+
+        \AtBeginDocument{\thispagestyle{empty}
+        \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=22.3cm,width=22cm,viewport=70 76 318 698]{portada2.pdf}};
+        \node[text width=8cm] at (15.65,17.85) {\large \textbf{SEGUNDO INFORME}};
+        \node[text width=8cm] at (15.48,17.38) {\ochopuntos Convenio de Desempeño 2022};
+        \node[text width=10cm] at (12.63,16.50) {\nuevepuntos Estatus y posibilidades de explotación biológicamente};
+        \node[text width=10cm] at (13.42,16.09) {\nuevepuntos sustentable de sardina austral, Región de Aysén};
+        \node[text width=12cm] at (14.40,15.69) {\nuevepuntos del General Carlos Ibáñez del Campo, año 2023};
+        \node[text width=10cm] at (12.33,14.85) {\footnotesize \textbf{SUBSECRETARÍA DE ECONOMÍA Y EMT / Agosto 2023}};
+        \node[text width=8cm] at (17.28,12.15) {\footnotesize \textbf{REQUERENTE}};
+        \node[text width=8cm] at (14.12,11.85) {\ochopuntos \textbf{SUBSECRETARÍA DE ECONOMÍA Y}};
+        \node[text width=8cm] at (14.46,11.49) {\ochopuntos \textbf{EMPRESAS DE MENOR TAMAÑO}};
+        \node[text width=8cm] at (15.29,10.70) {\ochopuntos Subsecretaria de Economía y};
+        \node[text width=8cm] at (15.39,10.37) {\ochopuntos Empresas de Menor Tamaño};
+        \node[text width=8cm] at (14.36,10.00) {\ochopuntos \textbf{Javiera Constanza Petersen Muga}};
+        \node[text width=8cm] at (17.79,9.15) {\footnotesize \textbf{EJECUTOR}};
+        \node[text width=8cm] at (12.74,8.79) {\footnotesize \textbf{INSTITUTO DE FOMENTO PESQUERO, IFOP}};
+        \node[text width=8cm] at (17.02,7.97) {\ochopuntos Director Ejecutivo};
+        \node[text width=8cm] at (16.06,7.61) {\ochopuntos \textbf{Gonzalo Pereira Puchy}};
+        \node[text width=8cm] at (14.33,6.87) {\ochopuntos Jefe División Investigación Pesquera};
+        \node[text width=8cm] at (15.78,6.46) {\ochopuntos \textbf{Carlos Montenegro Silva}};
+        \node[text width=8cm] at (16.28,5.25) {\footnotesize \textbf{JEFE DE PROYECTO}};
+        \node[text width=8cm] at (15.15,4.84) {\ochopuntos Fernando Espíndola Rebolledo}; 
+        \node[text width=8cm] at (18.39,4.05) {\footnotesize \textbf{AUTOR}};
+        \node[text width=8cm] at (15.15,3.67) {\ochopuntos Fernando Espíndola Rebolledo};
+        \node[text width=8cm] at (16.54,2.72) {\footnotesize \textbf{COLABORADORES}};
+        \node[text width=8cm] at (15.51,2.32) {\ochopuntos María José Zúñiga Basualto};
+        \node[text width=8cm] at (15.92,1.92) {\ochopuntos Doris Bucarey Sepúlveda};
+        \end{tikzpicture}\clearpage}
+        \AtEndDocument{\clearpage\thispagestyle{empty}
+        \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=22.3cm,width=22cm,viewport=70 74 318 698]{portada3.pdf}};
+        \end{tikzpicture}}
+        \AtEndDocument{\clearpage\thispagestyle{empty}
+        \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[height=22.3cm,width=22cm,viewport=35 32 278 278]{portada4.pdf}};
+        \end{tikzpicture}}
+
+    toc: true
+    toc-depth: 3
+    toc-title: "Índice"
+    number-sections: true
+    colorlinks: true
+    pdf-engine: pdflatex
+    #bibliography: hake_mse.bib
+    reference-section-title: " "
+    mainfont: "Arial"
+
+
+
+---
+
+```{css, echo=FALSE}
+.csl-entry {
+    margin-bottom: 12px;
+}
+ 
+.book .book-body .page-inner {
+    max-width: 1200px;
+}
+
+h3, h4 {
+  text-align: center;
+}
+
+body {
+  text-align: justify;
+}
+
+
+```
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, include=FALSE)
+options(scipen=999)
+
+```
+
+<style>
+tr:nth-child(even) {
+  background-color: #EDEDED!important;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+# Introducción
+
+# Especie estudiada
+
+
+
+# Fundamentación de la EEM
+
+
+# Introducción a openMSE
+
+
+# Componentes de una EEM
+
+## Modelos operativos (MO)
+
+
+## Estrategia de manejo (EM)
+
+
+## Métricas de desempeño (MD)
+
+
+# Desarrollo de modelos operativos
+
+
+
+
+
+## MO1
+
+## MO2
+
+## MO3
+
+## MO4
+
+# Supuestos de la dinámica en los MO 
+
+##	Error de proceso del reclutamiento
+
+##	Parámetros de historia de vida
+
+## Selectividad
+
+# Desarrollo de procedimientos de manejo
+
+
+
+## Procedimiento de manejo vigente
+
+## Propuesta de actualización del PM actual
+
+## Propuesta de un PM empírico basada en el índice obtenido del crucero acústico
+
+# Métricas de desempeño
+
+
+# Referencias
+
+
+
